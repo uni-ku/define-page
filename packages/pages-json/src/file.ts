@@ -198,7 +198,7 @@ async function exec<R = any>(file: string, exp: t.Expression, imports: t.ImportD
   }
 
   if (!fs.existsSync(tsx)) {
-    throw new Error(`[vite-plugin-pages-json] "tsx" is required parse macro expression value`);
+    throw new Error(`[@uni-ku/define-page] "tsx" is required parse macro expression value`);
   }
 
   const ast = t.file(t.program([

@@ -1,6 +1,6 @@
-import { definePagesJson } from 'vite-plugin-pages-json';
+import { UniPagesJson } from '@uni-ku/define-page';
 
-export default definePagesJson({
+export default UniPagesJson({
   globalStyle: {
     navigationBarTextStyle: 'black',
     navigationBarTitleText: 'uni-app',

@@ -1,4 +1,4 @@
-# vite-plugin-pages-json
+# @uni-ku/define-page
 
 ## 0.0.10
 

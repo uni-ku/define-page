@@ -202,6 +202,9 @@ importers:
       '@dcloudio/vite-plugin-uni':
         specifier: 3.0.0-4020420240722002
         version: 3.0.0-4020420240722002(postcss@8.4.38)(rollup@3.29.4)(vite@5.2.8)(vue@3.4.21)
+      '@uni-ku/define-page':
+        specifier: workspace:^
+        version: link:../pages-json
       '@vue/runtime-core':
         specifier: ^3.4.21
         version: 3.4.21
@@ -214,9 +217,6 @@ importers:
       vite:
         specifier: 5.2.8
         version: 5.2.8(@types/node@20.12.7)(terser@5.30.3)
-      vite-plugin-pages-json:
-        specifier: workspace:^
-        version: link:../pages-json
       vue-tsc:
         specifier: ^1.0.24
         version: 1.8.27(typescript@4.9.5)

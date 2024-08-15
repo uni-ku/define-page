@@ -25,13 +25,13 @@ async function restart() {
   });
 }
 
-export function viteDefinePagesJson(userConfig: UserConfig = {}): Plugin {
+export function viteUniPagesJson(userConfig: UserConfig = {}): Plugin {
   ctx.init(userConfig);
 
   checkPagesJsonFile();
 
   return {
-    name: 'vite-plugin-pages-json',
+    name: '@uni-ku/define-page',
     enforce: 'pre',
     async configResolved(viteConf) {
       if (!userConfig.root) {

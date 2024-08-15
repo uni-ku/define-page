@@ -1,6 +1,6 @@
 import Debug from 'debug';
 
-const PREFIX = 'define-pages-json:';
+const PREFIX = 'define-page:';
 
 const DEBUG_TYPES = [
   'loadPagesConfig',

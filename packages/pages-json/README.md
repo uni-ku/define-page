@@ -1,4 +1,4 @@
-# vite-plugin-pages-json
+# @uni-ku/define-page
 
 `definePage` 宏，用于动态生成 `pages.json`。
 
@@ -10,7 +10,7 @@
 ## 安装
 
 ```shell
-pnpm i -D vite-plugin-pages-json
+pnpm i -D @uni-ku/define-page
 ```
 
 ## 配置
@@ -18,13 +18,13 @@ pnpm i -D vite-plugin-pages-json
 ### vite 配置
 ```ts
 import uni from '@dcloudio/vite-plugin-uni';
+import { viteUniPagesJson } from '@uni-ku/define-page';
 import { defineConfig } from 'vite';
-import VitePagesJson from 'vite-plugin-pages-json';
 
 export default defineConfig({
   plugins: [
-    VitePagesJson(), // 详细配置请看下面的详细描述
-    uni(), // 添加在 VitePagesJson() 之后
+    viteUniPagesJson(), // 详细配置请看下面的详细描述
+    uni(), // 添加在 viteUniPagesJson() 之后
     // 其他plugins
   ],
 });
@@ -37,7 +37,7 @@ export default defineConfig({
 ```json
 {
   "compilerOptions": {
-    "types": ["vite-plugin-pages-json"]
+    "types": ["@uni-ku/define-page"]
   }
 }
 ```
@@ -106,9 +106,9 @@ export interface UserConfig {
 将与 `definePage` 合并，生成最终的 `pages.json`
 
 ```ts
-import { definePagesJson } from 'vite-plugin-pages-json';
+import { UniPagesJson } from '@uni-ku/define-page';
 
-export default definePagesJson({
+export default UniPagesJson({
   globalStyle: {
     navigationBarTextStyle: 'black',
     navigationBarTitleText: 'uni-app',
@@ -205,7 +205,7 @@ definePage(() => {
 ### 获取当前上下文的数据
 
 ```ts
-import { ctx } from 'vite-plugin-pages-json';
+import { ctx } from '@uni-ku/define-page';
 
 console.log(ctx.files);
 console.log(ctx.pages);

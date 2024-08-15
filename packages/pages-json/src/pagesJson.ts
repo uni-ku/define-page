@@ -5,7 +5,7 @@ import { getConfig } from './config';
 import { PAGES_CONFIG_EXT, PAGES_CONFIG_FILE } from './constant';
 import { debug } from './utils/debug';
 
-export function definePagesJson(userConfig: Partial<PagesJson>) {
+export function UniPagesJson(userConfig: Partial<PagesJson>) {
   return userConfig;
 }
 

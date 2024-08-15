@@ -1,11 +1,11 @@
 import uni from '@dcloudio/vite-plugin-uni';
+import { viteUniPagesJson } from '@uni-ku/define-page';
 import { defineConfig } from 'vite';
-import VitePageJson from 'vite-plugin-pages-json';
 
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [
-    VitePageJson({
+    viteUniPagesJson({
       pages: 'src/pages',
       subPackages: ['src/pages-sub'],
       debug: true,
