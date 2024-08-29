@@ -69,7 +69,7 @@ export function viteUniPagesJson(userConfig: UserConfig = {}): Plugin {
       if (s.hasChanged()) {
         const code = s.toString();
 
-        debug.watcher({ code });
+        // debug.watcher({ code });
         return {
           code,
           map: s.generateMap({
